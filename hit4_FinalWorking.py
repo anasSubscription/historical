@@ -10,7 +10,7 @@ from dhan_auth import get_dhan_headers
 # =================================================
 # CONFIG
 # =================================================
-CSV_FILE_PATH = r"C:\Anas\p\hit\api-scrip-master-detailed redefined1.csv"
+CSV_FILE_PATH = r"\api-scrip-master-detailed redefined1.csv"
 
 HISTORICAL_URL = "https://api.dhan.co/v2/charts/historical"
 INTRADAY_URL   = "https://api.dhan.co/v2/charts/intraday"
@@ -265,3 +265,4 @@ for i, c in enumerate(st.session_state.charts):
 
             with st.expander("📌 Difference – Headers / Request / Response"):
                 st.json(c["diff"])
+
